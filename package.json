@@ -1,0 +1,24 @@
+{
+  "name": "wireless-logic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyitrai87/wireless-logic.git"
+  },
+  "author": "Adam Nyitrai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyitrai87/wireless-logic/issues"
+  },
+  "homepage": "https://github.com/nyitrai87/wireless-logic#readme",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.10",
+    "node-fetch": "3.2.0"
+  }
+}
