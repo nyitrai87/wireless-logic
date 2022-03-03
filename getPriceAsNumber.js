@@ -1,5 +1,3 @@
-import * as getAnnualPrice from './getAnnualPrice';
-
 export function getPriceAsNumber(string) {
     const price = +((string.split(' ').find(element => element.startsWith('£')) || '').substring(1));
     
@@ -8,8 +6,4 @@ export function getPriceAsNumber(string) {
     }
 
     return price;
-}
-
-export function compareAnnualPrices(product1, product2) {
-    return getAnnualPrice.getAnnualPrice(product2) - getAnnualPrice.getAnnualPrice(product1);
 }

@@ -8,8 +8,7 @@
     "collectCoverage": true,
     "transform": {
       "^.+\\.js$": "babel-jest"
-    },
-    "testRegex": ".*.jest-test.js$"
+    }
   },
   "babel": {
     "plugins": [
@@ -17,7 +16,7 @@
     ]
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -35,7 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@babel/node": "^7.16.8",
+    "babel-jest": "^27.5.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "jest": "^27.5.1"
   }
