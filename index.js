@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
+import { getPriceAsNumber, compareAnnualPrices } from './functions';
 
 const url = 'https://demo.comesconnected.com/'
 const selectors = {
@@ -44,24 +45,6 @@ function processProductElement(title, description, price, discountText) {
     }
 
     return {title, description, price, discount};
-}
-
-function getAnnualPrice(product) {
-    let annualPrice = product.price;
-
-    if(product.title.includes('Months')) {
-        annualPrice = product.price * 12;
-    } 
-
-    return annualPrice;
-}
-
-function compareAnnualPrices(product1, product2) {
-    return getAnnualPrice(product2) - getAnnualPrice(product1);
-}
-
-function getPriceAsNumber(string) {
-    return +((string.split(' ').find(element => element.startsWith('£')) || '').substring(1))
 }
 
 execute();
