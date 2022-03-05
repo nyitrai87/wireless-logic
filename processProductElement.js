@@ -1,3 +1,7 @@
+// This function takes 4 parameters and returns them in an object.
+// Discount is 0 by default, but if the obtained 'discountText' parameter is not an empty string,
+// it sets the discount price to the amount the string contains with the help of the 'getPriceAsNumber' function. 
+
 import { getPriceAsNumber } from './getPriceAsNumber.js';
 
 export function processProductElement(title, description, price, discountText) {
