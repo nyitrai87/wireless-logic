@@ -1,7 +1,7 @@
 {
   "name": "wireless-logic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Software Engineering Technical Test",
   "main": "index.js",
   "type": "module",
   "jest": {
@@ -30,7 +30,7 @@
   "homepage": "https://github.com/nyitrai87/wireless-logic#readme",
   "dependencies": {
     "cheerio": "1.0.0-rc.10",
-    "node-fetch": "3.2.0"
+    "node-fetch": "2.6.7"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

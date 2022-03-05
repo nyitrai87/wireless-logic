@@ -25,5 +25,5 @@ describe('Compare annual prices', () => {
         const testProduct2 = { title: 'Test Product - 1 Year', description: 'Yearly test package', price: 191.88, discount: 15.99 };
         getAnnualPrice.mockReturnValueOnce(191.88).mockReturnValueOnce(191.88);
         expect(compareAnnualPrices(testProduct1, testProduct2)).toBe(0);
-    });    
+    });
 })
