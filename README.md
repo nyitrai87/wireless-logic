@@ -1,14 +1,13 @@
-Welcome! This is my implementation of the Software Engineering Technical Test. 
-This is a Node.js application with using several npm libraries. I hope you will like it! :)
+# Software Engineering Technical Test for Wireless Logic
 
-Before you start, please don't forget to install the necessary libraries by running the "npm i" command in the terminal.
-Once all of them are installed, you can use it by mentioned below.
+## Prerequisites
+- [Node.js 14+](https://nodejs.org/en/download/ "Download)
 
-HOW TO RUN THE APP?
-- In the terminal run the "node index.js" command.
+## Installing Dependencies
+1. Execute `npm i` in project folder
 
-HOW TO RUN TESTS?
-- In the terminal run the "npm run test" command.
+## Running The Application
+1. Execute `npm start` in project folder
 
-DEPENDENCIES NEEDED FROM THE SYSTEM:
-- None.
+## Running Tests
+1. Execute `npm run test` in project folder

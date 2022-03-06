@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import { execute } from './execute.js';
 import { compareAnnualPrices } from './compareAnnualPrices.js';
 import { getProductDataFromHTML } from './getProductDataFromHTML.js';
