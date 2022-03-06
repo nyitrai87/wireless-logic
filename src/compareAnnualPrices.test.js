@@ -20,7 +20,7 @@ describe('Compare annual prices', () => {
         getAnnualPrice.mockReturnValueOnce(159.99).mockReturnValueOnce(191.88);
         expect(compareAnnualPrices(testProduct1, testProduct2)).toBeLessThan(0);
     });
-    it('should determine if the first product is more expensive', () => {
+    it('should determine if the price of the two product are equal', () => {
         const testProduct1 = { title: 'Test Product - 12 Months', description: 'Monthly test package', price: 15.99, discount: 0 };
         const testProduct2 = { title: 'Test Product - 1 Year', description: 'Yearly test package', price: 191.88, discount: 15.99 };
         getAnnualPrice.mockReturnValueOnce(191.88).mockReturnValueOnce(191.88);

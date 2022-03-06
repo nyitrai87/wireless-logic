@@ -1,14 +1,19 @@
-// This function collects all products from a website and returns them in decreasing order. 
-// At first it fetches the URL and gets the HTML code as a response.
-// Then it obtains the products presented in the HTML with the help of "getProductDataFromHTML" method.
-// Finally it compares the products with the help of "compareAnnualPrices" and returns them in decreasing order.
-
 import fetch from 'node-fetch';
 import { compareAnnualPrices } from './compareAnnualPrices.js';
 import { getProductDataFromHTML } from './getProductDataFromHTML.js';
 
 const url = 'https://wltest.dns-systems.net/'
 
+/**
+ * Collects all products from a website and returns them in decreasing order.
+ * The function fetches an URL with the help of the "node-fetch" npm library and gets the HTML structure of the website as a response.
+ * By using "getProductDataFromHTML" method, it obtains the products presented in the HTML text.
+ * Finally it is sorting the products in decreasing order by their annual prices by using "compareAnnualPrices" method.
+ * 
+ * @param {string} url - A string containing the URL to be fetched.
+ * @returns with an array containing all the product objects in decreasing order.
+ * @author nyitrai87
+ */
 export function execute() {
     return fetch(url)
         .then(res => res.text())

@@ -1,9 +1,14 @@
-// This function takes a product object as a parameter and returns its annual price.
-// If the product based on yearly subscription, the annual price will be the same as the price of the product.
-// If the product based on monthly subscription, the annual price will be the price of the product multiplied by 12. 
-// By default the annual price is the price of the product. Then the function checks if the title of the product contains the word "months".
-// If it contains, then it overwrites the annualPrice variable with te price of the product multiplied by 12.
-
+/**
+ * Calculates annual price of a product option.
+ * The function parses the product's title to determine whether it denotes a monthly or yearly
+ * subscription.
+ * Annual price is the base price multiplied by 12 when product is a monthly subscription or the
+ * price itself otherwise.
+ *
+ * @param product A product object containing title, description, price and discount properties.
+ * @returns with a number representing annual price.
+ * @author  nyitrai87
+ */
 export function getAnnualPrice(product) {
     let annualPrice = product.price;
 
