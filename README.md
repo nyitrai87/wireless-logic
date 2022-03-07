@@ -11,3 +11,6 @@
 
 ## Running Tests
 1. Execute `npm run test` in project folder
+
+## Running Linter
+1. Execute `npm run lint` in project folder
