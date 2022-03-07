@@ -9,14 +9,14 @@
  * @returns with a number representing the price or discount.
  */
 export function getPriceAsNumber(string) {
-    const currencies = {
-        pound: '£'
-    };
-    const price = +((string.split(' ').find(element => element.startsWith(currencies.pound)) || '').substring(1));
+	const currencies = {
+		pound: '£'
+	};
+	const price = +((string.split(' ').find(element => element.startsWith(currencies.pound)) || '').substring(1));
 
-    if (isNaN(price)) {
-        return 0;
-    }
+	if (isNaN(price)) {
+		return 0;
+	}
 
-    return price;
+	return price;
 }

@@ -10,5 +10,5 @@ import { getAnnualPrice } from './getAnnualPrice.js';
  * @author nyitrai87
 */
 export function compareAnnualPrices(product1, product2) {
-    return getAnnualPrice(product2) - getAnnualPrice(product1);
+	return getAnnualPrice(product2) - getAnnualPrice(product1);
 }

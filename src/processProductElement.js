@@ -13,11 +13,11 @@ import { getPriceAsNumber } from './getPriceAsNumber.js';
  * @author nyitrai87
  */
 export function processProductElement(title, description, price, discountText) {
-    let discount = 0;
+	let discount = 0;
 
-    if (discountText !== '') {
-        discount = getPriceAsNumber(discountText);
-    }
+	if (discountText !== '') {
+		discount = getPriceAsNumber(discountText);
+	}
 
-    return { title, description, price, discount };
+	return { title, description, price, discount };
 }

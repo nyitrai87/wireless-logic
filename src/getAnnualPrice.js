@@ -10,11 +10,11 @@
  * @author  nyitrai87
  */
 export function getAnnualPrice(product) {
-    let annualPrice = product.price;
+	let annualPrice = product.price;
 
-    if (product.title.toLowerCase().includes('months')) {
-        annualPrice = product.price * 12;
-    }
+	if (product.title.toLowerCase().includes('months')) {
+		annualPrice = product.price * 12;
+	}
 
-    return annualPrice;
+	return annualPrice;
 }
